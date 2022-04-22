@@ -18,21 +18,20 @@
             <div class="container">
                 <a href="index.html" class="navbar-brand">Database.Design</a>
                 <div class="navbar-nav">
-                    <a href="">Home</a>
-                    <a href="">database</a>
-                    <a href="">blog</a>
-                    <a href="">about</a>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">blog</a>
+
                 </div>
             </div>
         </nav>
         <div class="banner">
             <div class="container">
                 <h1 class="banner-title">
-                    <span>Data.</span> Database Blog
+                    DMBS.Blog
                 </h1>
                 <p>everything you that you want to know about databases</p>
                 <form>
-                    <input type="text" class="search-input" placeholder="find your food...">
+                    <input type="text" class="search-input" placeholder="Find your data...">
                     <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
                     </button>
@@ -45,8 +44,8 @@
     <section class="design" id="design">
         <div class="container">
             <div class="title">
-                <h2>Help Database Links</h2>
-                <p>Recent Database Design Information</p>
+                <h2>Helpful Database Links</h2>
+                <p>Recent Information on Database Design </p>
             </div>
             <div class="design-content">
                 <div class="design-item">
@@ -101,83 +100,106 @@
     <section class="blog" id="blog">
         <div class="container">
             <div class="title">
-                <h2>Latest Blog</h2>
-                <p>Recent blogs</p>
+                <h2>Latest Blog Posts</h2>
             </div>
             <div class="blog-content">
                 <!-- item -->
-                <div class="blog-img">
-                    <img src="#">
-                    <span>20 April, 2022</span>
-                    <h2>06-Normalization</h2>
-                    <p>
-                        <strong>What is normalization in relation to relational databases?</strong>
-                        Normalization is the process of efficiently organizing data in a database. 
-                        There are two goals of the normalization process: eliminating redundant data (for example, storing the same data in more than one table) and ensuring data dependencies make sense (only storing related data in a table). 
-                        Both of these are worthy goals, as they reduce the amount of space a database consumes and ensure that data is logically stored.
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/normalization.jpeg">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="blog-text">
+                        <span>20 April, 2022</span>
+                        <h2>06-Normalization </h2>
+                        <p>
+                            <strong>What is normalization in relation to relational databases?</strong>
+                            Normalization is the process of efficiently organizing data in a database.
+                            There are two goals of the normalization process: eliminating redundant data (for example,
+                            storing the same data in more than one table) and ensuring data dependencies make sense
+                            (only
+                            storing related data in a table).
+                            Both of these are worthy goals, as they reduce the amount of space a database consumes and
+                            ensure that data is logically stored.
                         </p>
-                    <a href="/blog1.html">read more</a>
+                        <a href="blog.html">Read More</a>
+                    </div>
                 </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/basicsql.png">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="blog-text">
+                        <span>12 April, 2022</span>
+                        <h2>04-Basic SQL</h2>
+                        <p>There are five types of SQL commands:
+                        <ul>
+                            <li>DDL (Data Definition Language)</li>
+                            <li>DQL (Data Query Language)</li>
+                            <li>DML(Data Manipulation Language)</li>
+                            <li>DCL (Data Control Language)</li>
+                        </ul>
 
+                        </p>
+                        <a href="blog.html">Read More</a>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/ER-diagram.png">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="blog-text">
+                        <span>05 April, 2022</span>
+                        <h2>01-Data Modeling Using the ER Model</h2>
+                        <p>Six major steps that you would take in setting up a database for a particular enterprise:
+                        <ol>
+                            <li>Define a model containing all appropriate types of data and data relationships.</li>
+                            <li>Define the integrity constraints on the data.</li>
+                            <li>Define the conceptual schema for the model.</li>
+                            <li>Define the physical level.</li>
+                            <li>For each known problem to be solved on a regular basis (e.g., weekly inventory), define
+                                a view of the database and write the necessary application programs.</li>
+                            <li>Create and initialize the database.</li>
+                        </ol>
+
+                        </p>
+                        <a href="blog.html">Read More</a>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/datauser.png">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="blog-text">
+                        <span>29 March, 2022</span>
+                        <h2>00- Database and Database Users</h2>
+                        <p>          <strong>What is the difference between controlled and uncontrolled redundancy?</strong>
+                            <br>
+                            Redundancy is the state of being not or no longer needed or useful. In the traditional approach,
+                            uncontrolled redundancy in storing the same data/information many times in the database leads to
+                            several problems. This leads to Duplication of effort, Wastage of storage space and inconsistent
+                            data.
+                            <br>
+                            A controlled redundancy is a necessary technique to use redundant fields in a database. This
+                            speed ups the database access and also improves the performance of queries. Usually, the DBMS
+                            ensures the allocation of the data in the records. It should have the capability to control this
+                            redundancy in order to prohibit inconsistencies among the files.</p>
+                        <a href="blog.html">Read More</a>
+                    </div>
+                </div>
+                <!-- end of item -->
             </div>
-            <!-- end of item -->
-            <!-- item -->
-            <div class="blog-img">
-                <img src="#">
-                <span>12 April, 2022</span>
-                <h2>04-Basic SQL</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi fugiat nobis nihil
-                    error molestiae alias nostrum dolorem exercitationem voluptatem! Nostrum, eveniet? Qui eligendi
-                    natus velit assumenda adipisci iste sunt?</p>
-                <a href="#">read more</a>
-            </div>
-
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class="blog-img">
-            <img src="#">
-            <span>05 April, 2022</span>
-            <h2>01- Data Modeling Using the ER Model</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi fugiat nobis nihil error
-                molestiae alias nostrum dolorem exercitationem voluptatem! Nostrum, eveniet? Qui eligendi natus velit
-                assumenda adipisci iste sunt?</p>
-            <a href="#">read more</a>
-        </div>
-
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class="blog-img">
-            <img src="#">
-            <span>29 March, 2022</span>
-            <h2>00- Database and Database Users</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi fugiat nobis nihil error
-                molestiae alias nostrum dolorem exercitationem voluptatem! Nostrum, eveniet? Qui eligendi natus velit
-                assumenda adipisci iste sunt?</p>
-            <a href="#">read more</a>
-        </div>
-
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class="blog-img">
-            <img src="#">
-            <span>20 january, 2020</span>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi fugiat nobis nihil error
-                molestiae alias nostrum dolorem exercitationem voluptatem! Nostrum, eveniet? Qui eligendi natus velit
-                assumenda adipisci iste sunt?</p>
-            <a href="#">read more</a>
-        </div>
-
-        </div>
-        <!-- end of item -->
-     
         </div>
     </section>
-
-
     <!-- end of blog -->
 
     <!-- about -->
@@ -185,19 +207,17 @@
         <div class="container">
             <div class="about-content">
                 <div>
-                    <img src="images/about-bg.jpg">
+                    <img src="images/me.JPG">
                 </div>
                 <div class="about-text">
                     <div class="title">
                         <h2>Shelby Gleason</h2>
-                        <p>Database Design Student</p>
+                        <p>Web Development Student</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur eveniet rem sunt itaque
-                        inventore, fugiat doloribus nam animi quaerat esse magnam in voluptate quidem porro magni et
-                        veniam voluptatibus?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque necessitatibus animi error
-                        corporis similique a? Expedita similique vero quia obcaecati debitis esse, dolores optio,
-                        temporibus reprehenderit, minima dolorum quae ex!</p>
+                    <p>
+              
+                    </p>
+
                 </div>
             </div>
         </div>

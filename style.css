@@ -30,7 +30,7 @@ img{
 /* header */
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-bg.jpg) center/ cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/rc24-full-data-management01.webp) center/ cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -204,6 +204,7 @@ padding:0.25rem 1rem;
 .blog{
     background: #f9f9f9;
     padding:4.5rem 0;
+    margin: 90;
 
 }
 .blog-content{
@@ -259,6 +260,14 @@ padding:0.25rem 1rem;
 /* about */
 .about{
     padding: 4.5rem 0;
+}
+.about-content img{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
 .about-text{
     margin: 2rem 0;

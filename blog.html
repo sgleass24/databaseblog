@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>normalization</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Database.Design</a>
+            <div class="navbar-nav">
+                <a href="index.html">Home</a>
+                <a href="blog.html">blog</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2><strong>More on Normalization</strong></h2>
+            <p>
+
+                <strong>First Normal Form (1NF)</strong>
+                First normal form (1NF) sets the fundamental rules for an organized database:
+                Eliminate duplicative columns from the same table.
+                Create separate tables for each group of related data and identify each row with a unique column or set
+                of
+                columns (the primary key).
+                <br>
+                <strong>Second Normal Form (2NF)</strong>
+                Second normal form (2NF) further addresses the concept of removing duplicative data:
+                Meet all the requirements of the first normal form.
+                Remove subsets of data that apply to multiple rows of a table and place them in separate tables.
+                Create relationships between these new tables and their predecessors through the use of foreign keys.
+                <br>
+                <strong>Third Normal Form (3NF)</strong>
+                Third normal form (3NF) goes one significant step further:
+                Meet all the requirements of the second normal form.
+                Remove columns that are not dependent upon the primary key.
+                <br>
+                <strong>Boyce-Codd Normal Form (BCNF or 3.5NF)</strong>
+                The Boyce-Codd Normal Form, also referred to as the "third and half (3.5) normal form," adds one more
+                requirement:
+                Meet all the requirements of the third normal form.
+                Every determinant must be a candidate key.
+                <br>
+                <strong>Fourth Normal Form (4NF)</strong>
+                Finally, fourth normal form (4NF) has one additional requirement:
+                Meet all the requirements of the third normal form.
+                A relation is in 4NF if it has no multi-valued dependencies.
+                Remember, these normalization guidelines are cumulative. For a database to be in 2NF, it must first
+                fulfill
+                all
+                the criteria of a 1NF database.
+
+            </p>
+        </div>
+    </section>
+
+    <hr>
+    <hr>
+
+    <section>
+        <div class="container">
+            <h2>More on SQL</h2>
+            <p>
+                <br>
+                There are five types of SQL commands: DDL, DML, DCL, TCL, and DQL.
+                <br><br>
+                <strong>DDL (Data Definition Language): </strong>
+                <br>
+                DDL or Data Definition Language actually consists of the SQL commands that can be used to define the
+                database schema. It simply deals with descriptions of the database schema and is used to create and
+                modify the structure of database objects in the database.DDL is a set of SQL commands used to create,
+                modify, and delete database structures but not data. These commands are normally not used by a general
+                user, who should be accessing the database via an application.
+                <br>
+                List of DDL commands:
+                <br>
+            <ul>
+                <li>CREATE: This command is used to create the database or its objects (like table, index, function,
+                    views, store procedure, and triggers).</li>
+                <li>DROP: This command is used to delete objects from the database.</li>
+                <li>ALTER: This is used to alter the structure of the database.</li>
+                <li>TRUNCATE: This is used to remove all records from a table, including all spaces allocated for the
+                    records are removed.</li>
+                <li>COMMENT: This is used to add comments to the data dictionary.</li>
+                <li>RENAME: This is used to rename an object existing in the database.</li>
+            </ul>
+            <br>
+            <strong>DQL (Data Query Language):</strong>
+            <br>
+            DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL
+            Command is to get some schema relation based on the query passed to it. We can define DQL as follows it is a
+            component of SQL statement that allows getting data from the database and imposing order upon it. It
+            includes the SELECT statement. This command allows getting the data out of the database to perform
+            operations with it. When a SELECT is fired against a table or tables the result is compiled into a further
+            temporary table, which is displayed or perhaps received by the program i.e. a front-end.
+            <br>
+            List of DQL:
+            <br>
+
+            <li>SELECT: It is used to retrieve data from the database.</li>
+
+            <br>
+            <strong>DML(Data Manipulation Language): </strong>
+            <br>
+            The SQL commands that deals with the manipulation of data present in the database belong to DML or Data
+            Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement
+            that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
+            List of DML commands:
+            <br>
+            <ul>
+                <li>INSERT : It is used to insert data into a table.</li>
+                <li>UPDATE: It is used to update existing data within a table.</li>
+                <li>DELETE : It is used to delete records from a database table.</li>
+                <li>LOCK: Table control concurrency.</li>
+                <li>CALL: Call a PL/SQL or JAVA subprogram.</li>
+                <li>EXPLAIN PLAN: It describes the access path to data.</li>
+            </ul>
+
+            <br>
+            <strong>DCL (Data Control Language): </strong>
+            <br>
+            DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other
+            controls of the database system.
+            <br>
+            List of DCL commands:
+            <br>
+            <ul>
+                <li>GRANT: This command gives users access privileges to the database.</li>
+                <li>REVOKE: This command withdraws the user’s access privileges given by using the GRANT command.</li>
+            </ul>
+            <br>
+            Though many resources claim there to be another category of SQL clauses <strong>TCL – Transaction Control
+                Language</strong>. TCL commands deal with the transaction within the database.
+            <br>
+            List of TCL commands:
+            <br>
+            <ul>
+                <li>COMMIT: Commits a Transaction.</li>
+                <li>ROLLBACK: Rollbacks a transaction in case of any error occurs.</li>
+                <li>SAVEPOINT:Sets a savepoint within a transaction.</li>
+                <li>SET TRANSACTION: Specify characteristics for the transaction.</li>
+            </ul>
+
+            </p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
+        <span>Database Design Blog</span>
+    </footer>
+    <!-- end of footer -->
+
+</body>
+
+</html>
